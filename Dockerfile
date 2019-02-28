@@ -8,8 +8,8 @@ EXPOSE 443
 
 FROM microsoft/dotnet:2.1-aspnetcore-runtime AS build
 WORKDIR /src
-COPY ["WebApplication/WebApplication.csproj", "WebApplication/"]
-RUN dotnet restore "WebApplication/WebApplication.csproj"
+COPY ["WebApplication.csproj", "WebApplication/"]
+RUN dotnet restore "WebApplication.csproj"
 COPY . .
 WORKDIR "/src/WebApplication"
 RUN dotnet build "WebApplication.csproj" -c Release -o /app

@@ -1,6 +1,6 @@
 ACR_NAME=dotnetcoretests
 GIT_USER=bradygaster
-GIT_PAT=8f2d3c70eb9814b405aba515b5f821ec6f785678
+GIT_PAT=b7df0f89c0f80b69378b1e163892c6c2b8f6a759
 
 az acr task create \
     --registry $ACR_NAME \
