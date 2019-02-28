@@ -8,5 +8,5 @@ az acr task create \
     --image webapplication:{{.Run.ID}} \
     --context https://github.com/$GIT_USER/AspNetCoreOnWindowsContainer.git \
     --branch master \
-    --file Dockerfile \
+    --file WebApplication/Dockerfile \
     --git-access-token $GIT_PAT
